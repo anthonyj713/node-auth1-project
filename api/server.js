@@ -22,7 +22,7 @@ const sessionConfig = {
 
 server.use(session(sessionConfig));
 server.use('/api/users', usersRouter);
-server.use('api/auth', authRouter);
+server.use('/api/auth', authRouter);
 
 server.get('/', (req, res) => {
     res.json({ api: 'up' });

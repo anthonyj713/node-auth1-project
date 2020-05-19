@@ -27,6 +27,6 @@ function add(user){
     return db('users')
     .insert(user, 'id')
     .then(ids => {
-        return findById(ids[0])
+        return getById(ids[0])
     });
 };
